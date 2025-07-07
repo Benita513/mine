@@ -147,6 +147,61 @@ header {
   animation: slide-to-left 0.5s ease-in-out;
   animation-fill-mode: forwards;
 }
+.property-item a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+}
+.luxury-apartment {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.property-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.img-side {
+  flex: 1;
+  margin-right: 20px;
+}
+.details-side {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.luxury-apartment img {
+  width: 50vw;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.luxury-apartment h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+.luxury-apartment p {
+  margin: 0 10px 10px;
+  font-size: 1.2em;
+  color: #666;
+}
+.luxury-apartment .property-description {
+  color: aliceblue;
+  font-size: 20px;
+  box-sizing: content-box;
+}
+
 .fading-bg {
   background: radial-gradient(
     circle,
@@ -184,6 +239,11 @@ h2 {
   margin: 0 10px 10px;
   font-size: 1.2em;
   color: #666;
+}
+.property-description {
+  color: aliceblue;
+  font-size: 20px;
+  box-sizing: content-box;
 }
 .footer {
   background-color: #333;
@@ -306,18 +366,15 @@ h2 {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-10px);
+    transform: translateX(-5px);
   }
   50% {
-    transform: translateX(10px);
+    transform: translateX(5px);
   }
   75% {
-    transform: translateX(-10px);
+    transform: translateX(-5px);
   }
   100% {
     transform: translateX(0);
   }
-}
-.hero button {
-  animation: shake 0.5s linear infinite;
 }
